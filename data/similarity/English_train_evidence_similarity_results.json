@@ -1,0 +1,1658 @@
+[
+    {
+        "rumor_id": "AuRED_014",
+        "evidence_id": "1357211717479116800",
+        "similarity": 0.04946203689372056,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_014",
+        "evidence_id": "1356683687870488576",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_014",
+        "evidence_id": "1356683511047028748",
+        "similarity": 0.17557514892784237,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_014",
+        "evidence_id": "1356683390733471746",
+        "similarity": 0.06633604030696669,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_037",
+        "evidence_id": "1301079467889131522",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_037",
+        "evidence_id": "1301067546200858626",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_037",
+        "evidence_id": "1300798719751794688",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1226482043007066113",
+        "similarity": 0.013971380972709928,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1225345358961762304",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1226202744475865089",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224702545127407617",
+        "similarity": 0.015068296568904512,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224372681870651392",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224361944959922178",
+        "similarity": 0.014038842434977689,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224361941986050049",
+        "similarity": 0.01765838574094337,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1225075510461583362",
+        "similarity": 0.022799537577125252,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224728227136131073",
+        "similarity": 0.022799537577125252,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224727797043814400",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224725042845704193",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1225286729332150273",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224919667661295618",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224919598698565633",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224919545057619968",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224919523691827202",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224208762606686209",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1226177350376685569",
+        "similarity": 0.05489530104725275,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1226116927015141376",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1225068691332550662",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224546827657048064",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224347860436582400",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224339041534898179",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224153761511198720",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224264648142151680",
+        "similarity": 0.016318741696994855,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224264646913187842",
+        "similarity": 0.03184499634931889,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1226159605815947264",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1226159298398556160",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1226093838357405696",
+        "similarity": 0.014180987760856698,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1225418369857413120",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_085",
+        "evidence_id": "1224759855837143040",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222506828694794240",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1223649306667778049",
+        "similarity": 0.04665448017771521,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222476311291142145",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222418957833068546",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1223651591712014338",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1223647517855928326",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222457635909312512",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222382247099150337",
+        "similarity": 0.09281564492719212,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1223649510116732930",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222489400422096896",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222421365459968001",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222581824242769920",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_089",
+        "evidence_id": "1222581782421307393",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_135",
+        "evidence_id": "1585012773125120000",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_135",
+        "evidence_id": "1585011015032315904",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_141",
+        "evidence_id": "1606302597861691393",
+        "similarity": 0.14005399876341978,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_143",
+        "evidence_id": "1582632003370786816",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_146",
+        "evidence_id": "1575070484856639493",
+        "similarity": 0.09281236268642352,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_152",
+        "evidence_id": "1608466918561792000",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_155",
+        "evidence_id": "1475115418905939980",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1359595392908861447",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1359595347228700676",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1359595248519946250",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1359583766205915141",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1359507682365956097",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1359164409436909570",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358983300451360768",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358981253521952769",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358896089898897408",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358877847419555843",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358811193415262208",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358779880113111048",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358687655433822208",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358687490400477185",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358671765401202688",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358670908949463043",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358512891973038082",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358509050288369666",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358508986266451975",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358508939441274883",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358508901335990276",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358309861830889473",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1358102666438705152",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357996224029347840",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357996160959545345",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357995461513269249",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357842067687411713",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357841750048595969",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357563326704844802",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357486565979803649",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357430027697213448",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_157",
+        "evidence_id": "1357418944215277568",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_158",
+        "evidence_id": "1321027604749713408",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_105",
+        "evidence_id": "1554448728320344064",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_105",
+        "evidence_id": "1554448815524139013",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_105",
+        "evidence_id": "1554446617356427266",
+        "similarity": 0.08812706113236611,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_111",
+        "evidence_id": "1589959119448182784",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_111",
+        "evidence_id": "1589296752473280512",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_111",
+        "evidence_id": "1588890490975686658",
+        "similarity": 0.039135448495015324,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_111",
+        "evidence_id": "1588890064360443904",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_111",
+        "evidence_id": "1588861824552046593",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_115",
+        "evidence_id": "1557788843444768768",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_115",
+        "evidence_id": "1557751259322585090",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_118",
+        "evidence_id": "1606748388212490242",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_118",
+        "evidence_id": "1607147604533563398",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_118",
+        "evidence_id": "1607005112605577221",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_118",
+        "evidence_id": "1606938423604006913",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_118",
+        "evidence_id": "1606764600258461696",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_118",
+        "evidence_id": "1606761259428216832",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_124",
+        "evidence_id": "1579823980735008772",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_124",
+        "evidence_id": "1579814147814195200",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_129",
+        "evidence_id": "1603492708013727750",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1404096668648284162",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403769350566391813",
+        "similarity": 0.2019130610651681,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403418766537596928",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403408751256903680",
+        "similarity": 0.04478702812297052,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403397902005907460",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403392983706357762",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403346697439387650",
+        "similarity": 0.06145214953987854,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403311017975746567",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403059152201699328",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403017537739276289",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403010411730018307",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1402304497230155779",
+        "similarity": 0.04779850124479066,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1404158946177343491",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1402218639982567426",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403923883229601795",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1402807732772610050",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1402627616994123778",
+        "similarity": 0.10199768475982088,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1402535941768728576",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1402350777167908864",
+        "similarity": 0.12067042233457101,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1404211304521474048",
+        "similarity": 0.11710190187040925,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1404152477738483717",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403897234056417280",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1403145545171017729",
+        "similarity": 0.08316153125169291,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_012",
+        "evidence_id": "1402301407672295424",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_094",
+        "evidence_id": "1407286653870280710",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_094",
+        "evidence_id": "1407281821595885570",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_094",
+        "evidence_id": "1407281028385939456",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_094",
+        "evidence_id": "1407277685756280832",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_097",
+        "evidence_id": "1530468344050208768",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_133",
+        "evidence_id": "1603431144250396672",
+        "similarity": 0.05862326753867398,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_002",
+        "evidence_id": "1312456254627872769 ",
+        "similarity": 0.3687363826636186,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_051",
+        "evidence_id": "1319767190137147394",
+        "similarity": 0.07571307242278727,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_051",
+        "evidence_id": "1319763836656812033",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_051",
+        "evidence_id": "1319687699167588353",
+        "similarity": 0.13243627562029456,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_051",
+        "evidence_id": "1319352015357693952",
+        "similarity": 0.114001880062361,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_096",
+        "evidence_id": "1530889372903645185",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_096",
+        "evidence_id": "1531199485493248000",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_096",
+        "evidence_id": "1531026344342999040",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_096",
+        "evidence_id": "1530937640110923776",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_149",
+        "evidence_id": "1569006156026376193",
+        "similarity": 0.14226694396851236,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_098",
+        "evidence_id": "1489364997822107653",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_098",
+        "evidence_id": "1489364797200158722",
+        "similarity": 0.03542857437966963,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_098",
+        "evidence_id": "1488582344998936583",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_153",
+        "evidence_id": "1545018517723947014",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_153",
+        "evidence_id": "1544025729704271872",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_072",
+        "evidence_id": "1405523217100378126",
+        "similarity": 0.055904530600259246,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_138",
+        "evidence_id": "1557791648188350464",
+        "similarity": 0.37534187303579164,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_148",
+        "evidence_id": "1569697362141921281",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_128",
+        "evidence_id": "1603081441834942465",
+        "similarity": 0.22850075026969557,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_107",
+        "evidence_id": "1545054046091747331",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_110",
+        "evidence_id": "1585989354979315714",
+        "similarity": 0.055999030388375316,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577373842351493121",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1578108282144755712",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1578066257512996865",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1578062823523065856",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577965470266916864",
+        "similarity": 0.048592739622554275,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577745876667318297",
+        "similarity": 0.06918257862146263,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577684661169541124",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577672849577414660",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577672301486686208",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577661728518799360",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577625869069291521",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577618892763062274",
+        "similarity": 0.04164515706939824,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577613597525549060",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577603700599791617",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577594617662525440",
+        "similarity": 0.03580374520418582,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577590971667304450",
+        "similarity": 0.10276650629734294,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577584348261453824",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577582404419682305",
+        "similarity": 0.08110554394249822,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577572372344872960",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577564156999483392",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577541179440336898",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577423503967784960",
+        "similarity": 0.14847719530507664,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577409975340896262",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577406002944741406",
+        "similarity": 0.10013833007790501,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577391210909646848",
+        "similarity": 0.06947200251710588,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577380757911339008",
+        "similarity": 0.03210843466055303,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577376295591231501",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577375622841647128",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577373620715798530",
+        "similarity": 0.10139874840045532,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577365977515311120",
+        "similarity": 0.02487706913219529,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_121",
+        "evidence_id": "1577374862166867996",
+        "similarity": 0.025709511594744428,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1551895341225721856",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1550765228815679489",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1549761949319282688",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1550912604318613505",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1550765151216963584",
+        "similarity": 0.03394670540484427,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1549837967547662337",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1549761828460404740",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1551540055331815425",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1550212504906829824",
+        "similarity": 0.037897864522774084,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1550212501496791040",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1549833542829543427",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_117",
+        "evidence_id": "1551541535988240384",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_114",
+        "evidence_id": "1596212054897360897",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_114",
+        "evidence_id": "1596939989279215616",
+        "similarity": 0.03518914864026684,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_114",
+        "evidence_id": "1596939496540364800",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_114",
+        "evidence_id": "1596939148320874496",
+        "similarity": 0.1467783454046817,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_114",
+        "evidence_id": "1596885281881591808",
+        "similarity": 0.020521905820359905,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_114",
+        "evidence_id": "1596261031860645888",
+        "similarity": 0.3163344035816553,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_044",
+        "evidence_id": "1253824658559963136",
+        "similarity": 0.1431819997638768,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_044",
+        "evidence_id": "1253808261951901696",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_044",
+        "evidence_id": "1253804397227913218",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_044",
+        "evidence_id": "1253804482162569217",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_044",
+        "evidence_id": "1253805084418465793",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_011",
+        "evidence_id": "1281224587892719616",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_011",
+        "evidence_id": "1281242982520422401",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_011",
+        "evidence_id": "1281228472434798595",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_011",
+        "evidence_id": "1281299450523197440",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_140",
+        "evidence_id": "1608390435826810880",
+        "similarity": 0.2615439113587284,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_140",
+        "evidence_id": "1608219216225746944",
+        "similarity": 0.32588578963972514,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_140",
+        "evidence_id": "1608219198479601669",
+        "similarity": 1.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_137",
+        "evidence_id": "1560903063833026560",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_087",
+        "evidence_id": "1221891400637341697",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_019",
+        "evidence_id": "1236225321873141760",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1313123702993813505",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1312839671467126784",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1312827679893323776",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1312827202371833856",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1312815283342585856",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1312810721474949122",
+        "similarity": 0.04138246936988308,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1312806059682263043",
+        "similarity": 0.0948479782852414,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1312804450155798536",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1311758825049985027",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1311739650785112071",
+        "similarity": 0.2329267149096474,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1311735491780280327",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_079",
+        "evidence_id": "1311722729268219904",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_095",
+        "evidence_id": "1552312954267238402",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310675503750221839",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310668211097161731",
+        "similarity": 0.07649866860176517,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310615346672525319",
+        "similarity": 0.14396211676183818,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310569788331241472",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310321196764983296",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310297972111028225",
+        "similarity": 0.068235004504416,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310225598552383488",
+        "similarity": 0.10823597733045712,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310198023033679873",
+        "similarity": 0.15572814114617956,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310171527736893440",
+        "similarity": 0.12172876656749052,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310169464554610689",
+        "similarity": 0.08874458927514037,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310160263350542336",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310157337563406336",
+        "similarity": 0.1263604136695409,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1310121720284577793",
+        "similarity": 0.11148448122870436,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1309597160481206273",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308802187812798466",
+        "similarity": 0.1313411787577536,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308796188649558016",
+        "similarity": 0.0840520476696127,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308795530382848001",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308794549129670656",
+        "similarity": 0.06792828632057352,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308743441489297409",
+        "similarity": 0.07113683148465204,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308513591981748224",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308507374257405953",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308440963807883264",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308439198945472517",
+        "similarity": 0.14115988206645888,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_159",
+        "evidence_id": "1308402568033382404",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_131",
+        "evidence_id": "1593611143163133952",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_041",
+        "evidence_id": "1376975348114526215",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_145",
+        "evidence_id": "1575173614835728384",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_090",
+        "evidence_id": "1240009863960371204",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_090",
+        "evidence_id": "1239903792918867971",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_090",
+        "evidence_id": "1239904443698679810",
+        "similarity": 0.0,
+        "label": "REFUTES"
+    },
+    {
+        "rumor_id": "AuRED_116",
+        "evidence_id": "1602187821187567618",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_116",
+        "evidence_id": "1600901714328326144",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_119",
+        "evidence_id": "1572285784241352710",
+        "similarity": 0.04395494181945665,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_102",
+        "evidence_id": "1553978775129440257",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_125",
+        "evidence_id": "1583897396194353152",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_125",
+        "evidence_id": "1583895915282460672",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_123",
+        "evidence_id": "1579526681945337857",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    },
+    {
+        "rumor_id": "AuRED_112",
+        "evidence_id": "1608149988013400067",
+        "similarity": 0.0,
+        "label": "SUPPORTS"
+    }
+]
