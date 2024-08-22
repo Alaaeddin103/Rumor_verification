@@ -1,4 +1,4 @@
-# Task 5: Rumor Verification using Evidence from Authorities
+# Rumor Verification using Evidence from Authorities
 Given a rumor expressed in a tweet and a set of authorities (one or more authority Twitter accounts) for that rumor,
 represented by a list of tweets from their timelines during the period surrounding the rumor,the system should retrieve up to
 5 evidence tweets from those timelines, and determine if the rumor is supported (true), refuted (false), or unverifiable (in 
