@@ -1,10 +1,12 @@
-from data_loader import DataLoader
+from data_loading import DataLoader_Data
 from language_detector import LanguageDetector
 from preprocessor import Preprocessor
-from feature_extractor import FeatureExtractor
+from feature_extractor_ import FeatureExtractor
 from similarity_calculator import SimilarityCalculator
 from rumor_classifier import RumorClassifier
-from sklearn.metrics import precision_score, recall_score, f1_score
+from evaluation import Evaluation
+from sentiment_analyzer import SentimentAnalyzer
+from ner_extractor import NERExtractor
 import json
 
 if __name__ == "__main__":
@@ -14,9 +16,18 @@ if __name__ == "__main__":
     timeline_similarity_results_file_path = '../data/similarity/English_train_timeline_similarity_results.json'
 
     # Load and preprocess the dataset
-    data_loader = DataLoader(file_path)
+    data_loader = DataLoader_Data(file_path)
     language_detector = LanguageDetector()
-    preprocessor = Preprocessor(language_detector.detect_language(data_loader.data[0]['rumor']))
+    preprocessor = Preprocessor(
+        language=language_detector.detect_language(data_loader.data[0]['rumor']),
+        remove_urls=True,
+        remove_special_characters=True,
+        remove_stopwords=True,
+        remove_noise_words=True,
+        remove_emojis=True,
+        apply_stemming=False,
+        apply_lemmatization=True
+    )
     
     # Preprocess data
     preprocessed_data = []
@@ -32,8 +43,16 @@ if __name__ == "__main__":
     with open(preprocessed_file_path, 'w') as f:
         json.dump(preprocessed_data, f, ensure_ascii=False, indent=4)
 
-    # Feature extraction
-    extractor = FeatureExtractor()
+    # Sentiment Analysis and NER
+    sentiment_analyzer = SentimentAnalyzer()
+    ner_extractor = NERExtractor()
+
+    for item in preprocessed_data:
+        item['sentiment'] = sentiment_analyzer.analyze_sentiment(item['rumor'])
+        item['entities'] = ner_extractor.extract_entities(item['rumor'])
+
+    # Feature extraction using BERT
+    extractor = FeatureExtractor(method='bert')
     all_texts = [item['rumor'] for item in preprocessed_data] + \
                 [timeline_entry[2] for item in preprocessed_data for timeline_entry in item['timeline']] + \
                 [evidence_entry[2] for item in preprocessed_data for evidence_entry in item['evidence']]
@@ -41,13 +60,13 @@ if __name__ == "__main__":
 
     index = 0
     for item in preprocessed_data:
-        item['rumor_vector'] = vectors[index].toarray()[0].tolist()
+        item['rumor_vector'] = vectors[index].tolist() if extractor.method == 'bert' else vectors[index].toarray()[0].tolist()
         index += 1
         for timeline_entry in item['timeline']:
-            timeline_entry.append(vectors[index].toarray()[0].tolist())
+            timeline_entry.append(vectors[index].tolist() if extractor.method == 'bert' else vectors[index].toarray()[0].tolist())
             index += 1
         for evidence_entry in item['evidence']:
-            evidence_entry.append(vectors[index].toarray()[0].tolist())
+            evidence_entry.append(vectors[index].tolist() if extractor.method == 'bert' else vectors[index].toarray()[0].tolist())
             index += 1
 
     # Calculate similarities
@@ -71,12 +90,11 @@ if __name__ == "__main__":
     # Classify the rumors
     predictions = classifier.classify(timeline_similarities, preprocessed_data)
 
-    # Evaluate with precision and recall and f1
+    # Evaluate with precision, recall, and F1
     ground_truth_labels = [item['label'] for item in preprocessed_data]
-    precision = precision_score(ground_truth_labels, predictions, average='macro', zero_division=1)
-    recall = recall_score(ground_truth_labels, predictions, average='macro', zero_division=1)
-    f1 = f1_score(ground_truth_labels, predictions, average='macro', zero_division=1)
+    evaluator = Evaluation(ground_truth_labels, predictions)
+    metrics = evaluator.all_metrics()
 
-    print(f"Precision: {precision:.4f}")
-    print(f"Recall: {recall:.4f}")
-    print(f"F1 Score: {f1:.4f}")    
+    print(f"Precision: {metrics['precision']:.4f}")
+    print(f"Recall: {metrics['recall']:.4f}")
+    print(f"F1 Score: {metrics['f1_score']:.4f}")

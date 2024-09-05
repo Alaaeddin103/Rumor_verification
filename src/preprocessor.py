@@ -6,8 +6,18 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 
 class Preprocessor:
-    def __init__(self, language):
+    def __init__(self, language, remove_urls=True, remove_special_characters=True,
+                 remove_stopwords=True, remove_noise_words=True, remove_emojis=True,
+                 apply_stemming=True, apply_lemmatization=True):
         self.language = language
+        self.remove_urls_flag = remove_urls
+        self.remove_special_characters_flag = remove_special_characters
+        self.remove_stopwords_flag = remove_stopwords
+        self.remove_noise_words_flag = remove_noise_words
+        self.remove_emojis_flag = remove_emojis
+        self.apply_stemming_flag = apply_stemming
+        self.apply_lemmatization_flag = apply_lemmatization
+        
         self.stop_words = self.load_stopwords(language)
         self.noise_words = self.load_noise_words(language)
         self.stemmer = PorterStemmer()
@@ -48,15 +58,19 @@ class Preprocessor:
         return emoji_pattern.sub(r'', text)
 
     def preprocess_text(self, text):
-        text = self.remove_urls(text)
-        text = self.remove_emojis(text)
-        text = self.remove_special_characters(text)
-        text = self.remove_stopwords_and_noise(text)
+        if self.remove_urls_flag:
+            text = self.remove_urls(text)
+        if self.remove_emojis_flag:
+            text = self.remove_emojis(text)
+        if self.remove_special_characters_flag:
+            text = self.remove_special_characters(text)
+        if self.remove_stopwords_flag or self.remove_noise_words_flag:
+            text = self.remove_stopwords_and_noise(text)
         
-        # Apply stemming
-        text = ' '.join([self.stemmer.stem(word) for word in word_tokenize(text)])
+        if self.apply_stemming_flag:
+            text = ' '.join([self.stemmer.stem(word) for word in word_tokenize(text)])
         
-        # Apply lemmatization
-        text = ' '.join([self.lemmatizer.lemmatize(word) for word in word_tokenize(text)])
+        if self.apply_lemmatization_flag:
+            text = ' '.join([self.lemmatizer.lemmatize(word) for word in word_tokenize(text)])
         
-        return text 
+        return text

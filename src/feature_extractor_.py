@@ -1,0 +1,40 @@
+from transformers import BertTokenizer, BertModel
+from sklearn.feature_extraction.text import TfidfVectorizer
+import torch
+import numpy as np
+
+class FeatureExtractor:
+    def __init__(self, method='bert', bert_model_name='bert-base-uncased', batch_size=16, max_features=1000):
+        self.method = method
+        self.batch_size = batch_size
+        
+        if method == 'bert':
+            self.tokenizer = BertTokenizer.from_pretrained(bert_model_name)
+            self.model = BertModel.from_pretrained(bert_model_name)
+        elif method == 'tfidf':
+            self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), max_features=max_features)
+        else:
+            raise ValueError("Method not supported. Choose 'bert' or 'tfidf'.")
+
+    def fit_transform(self, texts):
+        if self.method == 'bert':
+            return self._bert_vectorize(texts)
+        elif self.method == 'tfidf':
+            return self.vectorizer.fit_transform(texts)
+
+    def transform(self, texts):
+        if self.method == 'bert':
+            return self._bert_vectorize(texts)
+        elif self.method == 'tfidf':
+            return self.vectorizer.transform(texts)
+
+    def _bert_vectorize(self, texts):
+        all_vectors = []
+        for i in range(0, len(texts), self.batch_size):
+            batch_texts = texts[i:i + self.batch_size]
+            inputs = self.tokenizer(batch_texts, return_tensors='pt', max_length=512, truncation=True, padding=True)
+            with torch.no_grad():
+                outputs = self.model(**inputs)
+            batch_vectors = outputs.last_hidden_state.mean(dim=1).detach().numpy()
+            all_vectors.extend(batch_vectors)
+        return np.array(all_vectors)
