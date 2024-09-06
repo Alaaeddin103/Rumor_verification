@@ -21,14 +21,14 @@ A[Load data] --> B(Preprocess
     C --> D(Identify relevant tweets
         - Cosine similarity between rumor and evidence
         - Determine threshold using xx
-        - Add tolerance)
+        - Add tolerance) & E (- Use augementation with with relevant tweets *optional*
+                              - Generate synthetic data *optional*)
 
-    D --> E(Fine-tune pretrained stance detection model
+    D --> F(Fine-tune pretrained stance detection model
         - Use pretrained model xx
         - Fine-tune with evidence: more weight
-        - Fine-tune with relevant samples from timeline: lesser weight
-        - Use augementation with data / synthetic data *optional*)
-    E --> F[Sample evidence from relevant tweets
+        - Fine-tune with relevant samples from timeline: lesser weight) & E --> F
+    F --> G[Determine threshold
         - Identify probability of of relevant instance for the chosen label
         - Arrange in decreasing order of this score
         - Use cutoff *determined from rumor/evidence distance*] 
