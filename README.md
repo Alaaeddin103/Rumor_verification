@@ -27,7 +27,7 @@ A[Load data] --> B(Preprocess
         - Use pretrained model xx
         - Fine-tune with evidence: more weight
         - Fine-tune with relevant samples from timeline: lesser weight
-        - Use augementation with data / synthetic data [optional])
+        - Use augementation with data / synthetic data *optional*)
     E --> F[Sample evidence from relevant tweets
         - Identify probability of of relevant instance for the chosen label
         - Arrange in decreasing order of this score
