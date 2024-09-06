@@ -21,7 +21,8 @@ A[Load data] --> B(Preprocess
     C --> D(Identify relevant tweets
         - Cosine similarity between rumor and evidence
         - Determine threshold using xx
-        - Add tolerance) & E (- Use augementation with with relevant tweets *optional*
+        - Add tolerance) & E (Additional features
+                              - Use augementation with with relevant tweets *optional*
                               - Generate synthetic data *optional*)
 
     D --> F(Fine-tune pretrained stance detection model
