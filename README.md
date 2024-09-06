@@ -10,16 +10,28 @@ __Table of Content:__
 - [Input Data Format](#input-data-format)
 - [Output Data Format](#output-data-format)
 
-# Proposed Approach
+# Proposed Approach (Training model)
 ```mermaid
 graph LR
 A[Load data] --> B(Preprocess
-        - noise removal
+        - Noise removal
         - URLs removal)
-    B --> C(Extract features)
-    C --> D(Identify relevant tweets)
-    D --> E(Classify stance using relevant tweets)
-    E --> F[Sample evidence from relevant tweets]
+    B --> C(Extract features
+        - SBERT embeddings)
+    C --> D(Identify relevant tweets
+        - Cosine similarity between rumor and evidence
+        - Determine threshold using xx
+        - Add tolerance)
+
+    D --> E(Fine-tune pretrained stance detection model
+        - Use pretrained model xx
+        - Fine-tune with evidence: more weight
+        - Fine-tune with relevant samples from timeline: lesser weight
+        - Use augementation with data / synthetic data [optional])
+    E --> F[Sample evidence from relevant tweets
+        - Identify probability of of relevant instance for the chosen label
+        - Arrange in decreasing order of this score
+        - Use cutoff (e.g., max distance b/w rumor & evidence in training data] 
 ```
 
 
