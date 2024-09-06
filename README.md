@@ -13,27 +13,38 @@ __Table of Content:__
 # Proposed Approach (Training model)
 ```mermaid
 graph LR
-A[Load data] --> B(Preprocess
+a[Load data]
+b(Preprocess
         - Noise removal
-        - URLs removal)
-    B --> C(Extract features
-        - SBERT embeddings)
-    C --> D(Identify relevant tweets
+        - URLs removal
+)
+c(Extract features
+        - SBERT embeddings
+)
+d(Identify relevant tweets
         - Cosine similarity between rumor and evidence
         - Determine threshold using xx
-        - Add tolerance) 
-    C --> E(Additional features
-                              - Use augementation with with relevant tweets *optional*
-                              - Generate synthetic data *optional*)
-
-    D --> F(Fine-tune pretrained stance detection model
+        - Add tolerance
+)
+e(Additional features
+         - Use augementation with with relevant tweets *optional*
+         - Generate synthetic data *optional*
+)
+f(Fine-tune pretrained stance detection model
         - Use pretrained model xx
         - Fine-tune with evidence: more weight
-        - Fine-tune with relevant samples from timeline: lesser weight) & E --> F
-    F --> G[Determine threshold
+        - Fine-tune with relevant samples from timeline: lesser weight
+)
+g[Determine threshold
         - Identify probability of of relevant instance for the chosen label
         - Arrange in decreasing order of this score
-        - Use cutoff *determined from rumor/evidence distance*] 
+        - Use cutoff *determined from rumor/evidence distance*]
+a --> b
+b --> c
+c --> d & e
+d --> f
+e --> f
+f --> g
 ```
 
 
