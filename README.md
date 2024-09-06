@@ -10,6 +10,15 @@ __Table of Content:__
 - [Input Data Format](#input-data-format)
 - [Output Data Format](#output-data-format)
 
+# Proposed Approach
+```mermaid
+graph LR
+A[Load data] --> B(Preprocess)
+    B --> C(Extract features)
+    C --> D(Identify relevant tweets)
+    D --> E(Classify stance using relevant tweets)
+    E --> F[Sample evidence from relevant tweets]
+```
 
 
 # Input Data Format
