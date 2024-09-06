@@ -23,8 +23,8 @@ c(Extract features
 )
 d(Identify relevant tweets
         - Cosine similarity between rumor and evidence
-        - Determine threshold using xx
-        - Add tolerance
+        - Determine threshold using xx t<sub>1</sub>
+        - Add tolerance 
 )
 e(Additional features
          - Use augementation with with relevant tweets *optional*
@@ -36,9 +36,41 @@ f(Fine-tune pretrained stance detection model
         - Fine-tune with relevant samples from timeline: lesser weight
 )
 g[Determine threshold
-        - Identify probability of of relevant instance for the chosen label
+        - Identify probability of relevant instance for the chosen label
         - Arrange in decreasing order of this score
-        - Use cutoff *determined from rumor/evidence distance*]
+        - Determine cutoff from rumor/evidence distance* t_<sub>2</sub>]
+a --> b
+b --> c
+c --> d & e
+d --> f
+e --> f
+f --> g
+```
+# Test Pipeline
+```mermaid
+graph LR
+a[Load data]
+b(Preprocess
+        - Noise removal
+        - URLs removal
+)
+c(Extract features
+        - SBERT embeddings
+)
+d(Identify relevant tweets
+        - Cosine similarity between rumor and evidence
+        - use threshold t<sub>1</sub>
+)
+e(Additional features
+         - Use augementation with with relevant tweets *optional*
+)
+f(Fine-tune pretrained stance detection model
+        - Use fine-tuned model for stance detection
+)
+g[Determine threshold
+        - Identify probability of relevant instance for the chosen label
+        - Arrange in decreasing order of this score
+        - Use cutoff t<sub>2</sub>]
 a --> b
 b --> c
 c --> d & e
