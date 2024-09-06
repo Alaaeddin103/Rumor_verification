@@ -31,7 +31,7 @@ A[Load data] --> B(Preprocess
     E --> F[Sample evidence from relevant tweets
         - Identify probability of of relevant instance for the chosen label
         - Arrange in decreasing order of this score
-        - Use cutoff (e.g., max distance b/w rumor & evidence in training data] 
+        - Use cutoff (e.g., max distance b/w rumor & evidence in training data)] 
 ```
 
 
