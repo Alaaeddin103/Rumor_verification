@@ -27,7 +27,8 @@ d(Identify relevant tweets
         - Add tolerance 
 )
 e(Additional features
-         - Use augementation with with relevant tweets *optional*
+         - Sentiment analysis, NER, ...
+         - Use augementation  with relevant tweets *optional*
          - Generate synthetic data *optional*
 )
 f(Fine-tune pretrained stance detection model
@@ -66,6 +67,7 @@ e(Additional features
 )
 f(Fine-tune pretrained stance detection model
         - Use fine-tuned model for stance detection
+        - Majority voting, weighted voting, ...
 )
 g[Determine threshold
         - Identify probability of relevant instance for the chosen label
