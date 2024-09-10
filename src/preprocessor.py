@@ -6,9 +6,9 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 
 class Preprocessor:
-    def __init__(self, language, remove_urls=True, remove_special_characters=True,
-                 remove_stopwords=True, remove_noise_words=True, remove_emojis=True,
-                 apply_stemming=True, apply_lemmatization=True):
+    def __init__(self, language, remove_urls=False, remove_special_characters=False,
+                 remove_stopwords=False, remove_noise_words=False, remove_emojis=False,
+                 apply_stemming=False, apply_lemmatization=False, clean_special_characters=False):
         self.language = language
         self.remove_urls_flag = remove_urls
         self.remove_special_characters_flag = remove_special_characters
@@ -17,6 +17,7 @@ class Preprocessor:
         self.remove_emojis_flag = remove_emojis
         self.apply_stemming_flag = apply_stemming
         self.apply_lemmatization_flag = apply_lemmatization
+        self.clean_special_characters_flag = clean_special_characters
         
         self.stop_words = self.load_stopwords(language)
         self.noise_words = self.load_noise_words(language)
@@ -28,7 +29,7 @@ class Preprocessor:
 
     def load_noise_words(self, language):
         if language == 'english':
-            return {"rt", "via", "…"}
+            return {"rt", "via", "…"}  
         elif language == 'arabic':
             return {"RT", "بواسطة", "…"}
         return set()
@@ -36,13 +37,22 @@ class Preprocessor:
     def remove_urls(self, text):
         url_pattern = re.compile(r'https?://\S+|www\.\S+')
         return url_pattern.sub(r'', text)
+    
+    def clean_special_characters(self, text):
+        # Remove all characters except letters, numbers, spaces, @mentions, and hashtags
+        return re.sub(r'[^a-zA-Z0-9\s@#]', '', text)
 
     def remove_special_characters(self, text):
         return text.translate(str.maketrans('', '', string.punctuation))
 
-    def remove_stopwords_and_noise(self, text):
+    def remove_stopwords(self, text):
         words = word_tokenize(text)
-        filtered_words = [word for word in words if word.lower() not in self.stop_words and word.lower() not in self.noise_words]
+        filtered_words = [word for word in words if word.lower() not in self.stop_words]
+        return ' '.join(filtered_words)
+
+    def remove_noise_words(self, text):
+        words = word_tokenize(text)
+        filtered_words = [word for word in words if word.lower() not in self.noise_words]
         return ' '.join(filtered_words)
 
     def remove_emojis(self, text):
@@ -60,13 +70,22 @@ class Preprocessor:
     def preprocess_text(self, text):
         if self.remove_urls_flag:
             text = self.remove_urls(text)
+            
         if self.remove_emojis_flag:
             text = self.remove_emojis(text)
+            
         if self.remove_special_characters_flag:
             text = self.remove_special_characters(text)
-        if self.remove_stopwords_flag or self.remove_noise_words_flag:
-            text = self.remove_stopwords_and_noise(text)
-        
+            
+        if self.clean_special_characters_flag:
+            text = self.clean_special_characters(text)
+                          
+        if self.remove_stopwords_flag:
+            text = self.remove_stopwords(text)
+            
+        if self.remove_noise_words_flag:
+            text = self.remove_noise_words(text)
+
         if self.apply_stemming_flag:
             text = ' '.join([self.stemmer.stem(word) for word in word_tokenize(text)])
         
