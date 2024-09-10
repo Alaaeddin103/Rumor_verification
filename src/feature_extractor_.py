@@ -14,7 +14,7 @@ class FeatureExtractor:
             self.model = BertModel.from_pretrained(bert_model_name)
         elif method == 'tfidf':
             self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), max_features=max_features)
-        elif method == 'sbert' or method == 'multilingual-sbert':
+        elif method == 'sbert':
             self.sbert_model = SentenceTransformer(sbert_model_name)
         else:
             raise ValueError("Method not supported. Choose 'bert', 'tfidf', or 'sbert/multilingual-sbert'.")
@@ -24,7 +24,7 @@ class FeatureExtractor:
             return self._bert_vectorize(texts)
         elif self.method == 'tfidf':
             return self.vectorizer.fit_transform(texts)
-        elif self.method == 'sbert' or self.method == 'multilingual-sbert':
+        elif self.method == 'sbert':
             return self._sbert_vectorize(texts)
 
     def transform(self, texts):
@@ -32,7 +32,7 @@ class FeatureExtractor:
             return self._bert_vectorize(texts)
         elif self.method == 'tfidf':
             return self.vectorizer.transform(texts)
-        elif self.method == 'sbert' or self.method == 'multilingual-sbert':
+        elif self.method == 'sbert':
             return self._sbert_vectorize(texts)
 
     def _bert_vectorize(self, texts):
@@ -47,5 +47,4 @@ class FeatureExtractor:
         return np.array(all_vectors)
     
     def _sbert_vectorize(self, texts):
-        # SBERT will handle batch processing internally
         return self.sbert_model.encode(texts, batch_size=self.batch_size, convert_to_numpy=True)
