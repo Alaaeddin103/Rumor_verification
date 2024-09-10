@@ -1,10 +1,11 @@
 from transformers import BertTokenizer, BertModel
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sentence_transformers import SentenceTransformer
 import torch
 import numpy as np
 
 class FeatureExtractor:
-    def __init__(self, method='bert', bert_model_name='bert-base-uncased', batch_size=16, max_features=1000):
+    def __init__(self, method='bert', bert_model_name='bert-base-uncased', sbert_model_name='paraphrase-multilingual-MiniLM-L12-v2', batch_size=16, max_features=1000):
         self.method = method
         self.batch_size = batch_size
         
@@ -13,20 +14,26 @@ class FeatureExtractor:
             self.model = BertModel.from_pretrained(bert_model_name)
         elif method == 'tfidf':
             self.vectorizer = TfidfVectorizer(ngram_range=(1, 2), max_features=max_features)
+        elif method == 'sbert' or method == 'multilingual-sbert':
+            self.sbert_model = SentenceTransformer(sbert_model_name)
         else:
-            raise ValueError("Method not supported. Choose 'bert' or 'tfidf'.")
+            raise ValueError("Method not supported. Choose 'bert', 'tfidf', or 'sbert/multilingual-sbert'.")
 
     def fit_transform(self, texts):
         if self.method == 'bert':
             return self._bert_vectorize(texts)
         elif self.method == 'tfidf':
             return self.vectorizer.fit_transform(texts)
+        elif self.method == 'sbert' or self.method == 'multilingual-sbert':
+            return self._sbert_vectorize(texts)
 
     def transform(self, texts):
         if self.method == 'bert':
             return self._bert_vectorize(texts)
         elif self.method == 'tfidf':
             return self.vectorizer.transform(texts)
+        elif self.method == 'sbert' or self.method == 'multilingual-sbert':
+            return self._sbert_vectorize(texts)
 
     def _bert_vectorize(self, texts):
         all_vectors = []
@@ -38,3 +45,7 @@ class FeatureExtractor:
             batch_vectors = outputs.last_hidden_state.mean(dim=1).detach().numpy()
             all_vectors.extend(batch_vectors)
         return np.array(all_vectors)
+    
+    def _sbert_vectorize(self, texts):
+        # SBERT will handle batch processing internally
+        return self.sbert_model.encode(texts, batch_size=self.batch_size, convert_to_numpy=True)
