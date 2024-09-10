@@ -38,17 +38,3 @@ class RumorClassifier:
         total_similarity = sum([sim['similarity'] for sim in similarities])
         average_similarity = total_similarity / len(similarities)
         return average_similarity
-
-    @staticmethod
-    def evaluate(predictions, ground_truth):
-        precision = precision_score(ground_truth, predictions, average='macro', zero_division=1)
-        recall = recall_score(ground_truth, predictions, average='macro', zero_division=1)
-        f1 = f1_score(ground_truth, predictions, average='macro', zero_division=1)
-        strict_f1 = f1_score(ground_truth, predictions, average='macro', zero_division=1)
-
-        return {
-            'precision': precision,
-            'recall': recall,
-            'f1': f1,
-            'strict_f1': strict_f1
-        }
