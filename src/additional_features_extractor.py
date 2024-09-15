@@ -18,42 +18,36 @@ class AdditionalFeatureExtractor:
                  emoji_extractor=None,
                  use_url=True, 
                  use_hashtags=True, 
-                 use_mentions=True):
+                 use_mentions=True,
+                 use_keywords=True):  
         self.use_ner = use_ner
         self.use_sentiment = use_sentiment
         self.use_emoji_embeddings = use_emoji_embeddings
-        self.emoji_extractor = emoji_extractor  # Pass an instance of EmojiEmbeddingExtractor
+        self.emoji_extractor = emoji_extractor  
         self.use_url = use_url
         self.use_hashtags = use_hashtags
         self.use_mentions = use_mentions
+        self.use_keywords = use_keywords  
 
     def extract_ner(self, text):
-        # Extract Named Entities from the text using spaCy.
         doc = nlp(text)
         return [(ent.text, ent.label_) for ent in doc.ents]
 
     def extract_sentiment(self, text):      
-        # Perform sentiment analysis using VADER.      
         sentiment_scores = sentiment_analyzer.polarity_scores(text)
         return sentiment_scores
 
     def extract_emoji_embeddings(self, text):
-       
-       # Extract emojis and their embeddings from the text.
-        
         emoji_embeddings = {}
-        emojis_in_text = emoji.emoji_list(text)  # Extract emojis from text
-
+        emojis_in_text = emoji.emoji_list(text)
         for emoji_info in emojis_in_text:
-            emoji_char = emoji_info['emoji']  # Get the emoji character
+            emoji_char = emoji_info['emoji']
             embedding = self.emoji_extractor.get_emoji_embedding(emoji_char)
             if embedding is not None:
                 emoji_embeddings[emoji_char] = embedding
-
         return emoji_embeddings
 
     def extract_url_features(self, text):      
-        # Extract features from URLs in the text.       
         url_pattern = re.compile(r'https?://\S+|www\.\S+')
         urls = url_pattern.findall(text)
         return {
@@ -61,22 +55,48 @@ class AdditionalFeatureExtractor:
         }
 
     def extract_hashtags(self, text):
-        # Extract hashtags from the text.
         hashtags = re.findall(r'#\w+', text)
         return {
             "hashtags": hashtags
         }
 
     def extract_mentions(self, text):
-        # Extract @mentions from the text.
         mentions = re.findall(r'@\w+', text)
         return {
             "mentions": mentions
         }
 
-    def extract_features(self, text):
+    def extract_keywords(self, text):
+
+        # Extract keywords from URLs and hashtags in the given text.
         
-        # Extract all selected features
+        url_keywords = []
+        hashtag_keywords = []
+
+        # Extract URL keywords
+        url_pattern = re.compile(r'https?://\S+|www\.\S+')
+        urls = url_pattern.findall(text)
+        
+        for url in urls:
+            # Remove protocol and split the URL to extract meaningful words
+            processed_url = re.sub(r'https?://(www\.)?', '', url)
+            processed_url = re.sub(r'\W+', ' ', processed_url)  # Extract meaningful words
+            url_keywords.extend(processed_url.split())
+
+        # Extract Hashtags and remove `#` to create keywords
+        hashtags = re.findall(r'#\w+', text)
+        hashtag_keywords = [hashtag.strip('#') for hashtag in hashtags]
+
+        # Combine keywords from URLs and hashtags
+        combined_keywords = url_keywords + hashtag_keywords
+
+        return {
+            "urls": urls,
+            "hashtags": hashtags,
+            "combined_keywords": combined_keywords
+        }
+
+    def extract_features(self, text):
         features = {}
 
         if self.use_ner:
@@ -96,5 +116,9 @@ class AdditionalFeatureExtractor:
         
         if self.use_mentions:
             features['mentions'] = self.extract_mentions(text)
+
+        if self.use_keywords:
+            keyword_data = self.extract_keywords(text)
+            features['keywords'] = keyword_data['combined_keywords']
 
         return features
